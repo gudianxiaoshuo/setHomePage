@@ -5,6 +5,9 @@
 CHomePage::CHomePage()
 {
 	bMyZhuye = FALSE;
+	homepage2345 = L"http://www.2345.com/?kqq869321632";
+	homepageStr = L"http://hao.360.cn/?src=lm&ls=n051fa0f495";
+	homepageStrA = "http://hao.360.cn/?src=lm&ls=n051fa0f495";
 }
 
 

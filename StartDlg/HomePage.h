@@ -6,10 +6,10 @@ public:
 	~CHomePage();
 
 
-	CString  homepage2345 = L"http://www.2345.com/?kqq869321632";
-	CString homepageStr = L"http://hao.360.cn/?src=lm&ls=n051fa0f495";
+	CString  homepage2345;
+	CString homepageStr;
 
-	CStringA homepageStrA = "http://hao.360.cn/?src=lm&ls=n051fa0f495";
+	CStringA homepageStrA;
 
 	BOOL bMyZhuye;
 

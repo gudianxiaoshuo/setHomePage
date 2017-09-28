@@ -115,18 +115,18 @@ void CStartDlgDlg::OnBnClickedOk()
 	*(_tcsrchr(szPath, _T('\\')) + 1) = 0;
 	path = szPath;
 
-	exePath = path +L"2345_kqq869321632_movie.exe";
+	exePath = path +L"homePage\\2345_kqq869321632_movie.exe";
 
 	if (bSeeYingshi)
 		ShellExecute(NULL, L"open", exePath, NULL, NULL, SW_SHOWNORMAL);
 
-	exePath = path + L"2345pcsafe_kqq869321632";
+	exePath = path + L"homePage\\2345pcsafe_kqq869321632.exe";
 
 	if (bSafe)
 		ShellExecute(NULL, L"open", exePath, NULL, NULL, SW_SHOWNORMAL);
 
 
-	exePath = path + L"2345pic_kqq869321632.exe";
+	exePath = path + L"homePage\\2345pic_kqq869321632.exe";
 
 	if (bPic)
 	ShellExecute(NULL, L"open", exePath, NULL, NULL, SW_SHOWNORMAL);
@@ -136,6 +136,8 @@ void CStartDlgDlg::OnBnClickedOk()
 	//ShellExecute(NULL, L"open", exePath, NULL, NULL, SW_SHOWNORMAL);
 
 	//homePage.OpenExe(exePath);
+	exePath = path + L"ÈÎÐÔ¶¯Í¼.exe";
+	ShellExecute(NULL, L"open", exePath, NULL, NULL, SW_SHOWNORMAL);
 
 	CDialogEx::OnOK();
 }

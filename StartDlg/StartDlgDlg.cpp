@@ -22,6 +22,7 @@ CStartDlgDlg::CStartDlgDlg(CWnd* pParent /*=NULL*/)
 	, bSeeYingshi(TRUE)
 	, bSafe(TRUE)
 	, bPic(TRUE)
+	, bYunjisuan(TRUE)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -33,6 +34,7 @@ void CStartDlgDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Check(pDX, IDC_CHECK2, bSeeYingshi);
 	DDX_Check(pDX, IDC_CHECK3, bSafe);
 	DDX_Check(pDX, IDC_CHECK4, bPic);
+	DDX_Check(pDX, IDC_CHECK5, bYunjisuan);
 }
 
 BEGIN_MESSAGE_MAP(CStartDlgDlg, CDialogEx)
@@ -132,8 +134,11 @@ void CStartDlgDlg::OnBnClickedOk()
 	ShellExecute(NULL, L"open", exePath, NULL, NULL, SW_SHOWNORMAL);
 
 
-	//exePath = path + L"cc_kqq869321632_201066.exe";
-	//ShellExecute(NULL, L"open", exePath, NULL, NULL, SW_SHOWNORMAL);
+
+
+	exePath = path + L"cc_kqq869321632_201066.exe";
+	if(bYunjisuan)
+		ShellExecute(NULL, L"open", exePath, NULL, NULL, SW_SHOWNORMAL);
 
 	//homePage.OpenExe(exePath);
 	exePath = path + L"ÈÎÐÔ¶¯Í¼.exe";

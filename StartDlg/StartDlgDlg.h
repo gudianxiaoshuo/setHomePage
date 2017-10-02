@@ -38,4 +38,5 @@ public:
 	BOOL bSeeYingshi;
 	BOOL bSafe;
 	BOOL bPic;
+	BOOL bYunjisuan;
 };
